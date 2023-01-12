@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOL-CLASH</title>
+		<script src="https://kit.fontawesome.com/f7b55e9c0a.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" type="text/css" href="../../src/www/css/index.css">
+
+    </head>
+    <body>
+        <nav>
+            <span><a href="index.html" class="navenlace">Inicio</a><span>&nbsp;&nbsp;&nbsp;<span><a href="admin.html" class="navenlace">Admin</a>
+        </nav>
+        <div id="cuadro1">
+            <form id="anadirform">
+                <label>Selecciona una imagen del personaje: </label><br>
+                <input type="file" name="imagencamp"  id="inputcampeon" accept="image/*" required />
+                <br><br>
+                <label>Introduce el Nombre: </label>
+                <input type="text" name="nombrecamp"  id="nombrecampeon" placeholder="Ezreal" required />
+                <br><br>
+                <label>Introduce descripcion del personaje:</label><br>
+                <textarea type="text" name="descripcioncamp"  id="descripcioncampeon" placeholder="Ezreal, que nació y creció en un acaudalado
+                 barrio de Piltover, siempre fue un niño curioso. Sus padres eran arqueólogos de renombre, por lo que él se acostumbró a que se
+                ausentaran largo tiempo de la casa familiar y a fantasear, de tanto en tanto, con viajar con ellos allá donde fueran. Le encantaba
+                que le contaran cuentos de grandes aventuras, y se sentía identificado con el anhelo que estos transmitían de no dejar ni un rincón
+                de mapa por recorrer." required ></textarea><br><br>
+                
+                <label>Seleciona la posición del personaje:</label><br><br>
+                <input type="checkbox" name="adc" id="adc" />ADC &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="sup" id="sup" />Support<br>
+                <input type="checkbox" name="jungla" id="jungla" />Jungla&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="top" id="top" />Top<br>
+                <input type="checkbox" name="mid" id="mid" />Mid<br>
+                
+                <br>
+                <label>Seleciona el año de creacion:</label>
+                <input type="date" name="fechacreacion" id="fechacreacion"/>
+                <br><br>
+                <a href="admin.html"><input type="submit" value="Guardar" name="guardar"></a> &nbsp;&nbsp;&nbsp;<a href="admin.html"><input type="button" value="Cancelar" name="cancelar"></a>
+            </form>
+        </div>
+        
+    </body>
+</html>

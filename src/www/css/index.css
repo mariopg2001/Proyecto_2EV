@@ -1,0 +1,71 @@
+body{
+    width: 100%;
+    background-image: url(../assets/fondo1.png);
+    background-attachment: fixed;
+}
+nav{
+   height:70px;
+   background-color: #0A1428;
+   color:#C89B3C
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+span#anadir{
+    position: absolute;
+    float: right;
+    height: 20px;    
+    width: 20px;
+    padding: 5px;
+    background-color: rgb(101, 106, 9);
+}
+div.contenedor{
+    background-color: rgb(56, 148, 155);    
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 70px;
+    min-width: 581px;
+}
+div#cuadro1{
+    margin-top: 70px;
+	margin:0 auto;
+	text-align:center;
+	background-color:#6aadb6;
+	width:550px;
+	 box-shadow: 5px 5px 8px #888888;
+}
+div.contenedorimagen{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: blanchedalmond;
+    display: inline-block;   
+}
+span.icono{
+    flex-grow:2;
+    text-align: center;
+    margin-top: 6px;
+}
+img.champ{
+    width: 150px;
+    height: 150px;
+}
+div.contenedoricono{
+    background-color: aquamarine;
+    height: 30px;
+    display: flex;
+}
+
+a.navenlace:hover,a.navenlace:visited, a.navenlace:link{
+    color: #C89B3C;
+}  
+a.canadir:hover,a.canadir:visited, a.canadir:link{
+    color: black;
+} 
+a{
+    text-decoration: none;
+}
+
+
+
