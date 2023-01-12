@@ -1,3 +1,6 @@
+*{
+    font-family: Nunito;
+}
 body{
     width: 100%;
     background-image: url(../assets/fondo1.png);

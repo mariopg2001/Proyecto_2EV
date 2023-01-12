@@ -1,3 +1,6 @@
+*{
+    font-family: Nunito;
+}
 body{
     width: 100%;
     background-image: url(../assets/fondo1.png);
@@ -8,7 +11,7 @@ nav{
    background-color: #0A1428;
    color:#C89B3C
 }
-img{
+img.champ{
     width: 150px;
     height: 150px;
 }
@@ -39,7 +42,6 @@ div.contenedorimagen{
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
-    background-color: blanchedalmond;
     display: inline-block;   
 }
 span.icono{
