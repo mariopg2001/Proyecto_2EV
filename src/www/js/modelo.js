@@ -30,31 +30,6 @@ export class Modelo{
 	     for(let callback of this.callbacks)
 	        callback()
 	 }
-	/**
-		Inserta un nuevo registro.
-		@param nombre {String} Atributo nombre del nuevo registro
-		@param email {String} Atributo email del nuevo registro
-	**/
-	insertar(nombre, email){
-		this.lista.push({'nombre': nombre, 'email': email})
-		this.avisar()
-	}
-	/**
-		Elimina un registro.
-		@param dato {Object} Dato a eliminar
-	**/
-	borrar(dato){
-		for(let i=0; i<= this.lista.length; i++)
-			if (dato == this.lista[i]) 
-				this.lista.splice(i,1)
-		this.avisar()
-	}
-	/**
-	 * Devuelve los datos del modelo.
-	 * En este modelo tan simple, es fácil. En proyectos más complejos, será más elaborado
-	 * #return {Array} Datos del modelo
-	 **/
-	 getDatos(){
-	     return this.lista
-	 }
+	
+
 }
