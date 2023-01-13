@@ -11,7 +11,7 @@ nav{
    background-color: #0A1428;
    color:#C89B3C
 }
-img{
+img.champ{
     width: 150px;
     height: 150px;
 }
@@ -78,7 +78,7 @@ body > div {
 }
 nav li{
 	cursor: pointer;
-    display: inline;
+    display: inline-block;
     margin-left: 20px;
 }
 table{
