@@ -18,7 +18,13 @@ export class VistaNav{
 		this.nav = nav
 		this.liadmin = this.nav.getElementsByTagName('li')[0]
         this.lianadir = this.nav.getElementsByTagName('li')[1]
+		this.anadir= document.getElementById('anadir')
+		this.mod=document.getElementById('mod')
+
         this.limod = this.nav.getElementsByTagName('li')[2]
+
+		this.mod.onclick=this.pulsarmod.bind(this)
+		this.anadir.onclick=this.pulsaranadir.bind(this)
 
 		this.liadmin.onclick = this.pulsaradmin.bind(this)
 		this.lianadir.onclick = this.pulsaranadir.bind(this)

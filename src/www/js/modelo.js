@@ -3,6 +3,7 @@
 	@author Miguel Jaque <mjaque@fundacionloyola.es>
 	@license GPL-3.0-or-later
 **/
+import {Idb} from './idb.js'
 
 /**
 	Clase Modelo
@@ -12,9 +13,14 @@ export class Modelo{
 	/**
 		Constructor de la clase
 	**/
-	constructor(){
+	constructor(controlador){
+		
 		this.lista = [] //Array de datos
 		this.callbacks = [] //Array de callbacks para implementar el observador
+		this.controlador = controlador
+		this.idb = new Idb()
+		
+		
 	}
 	/**
 	 * Registra un objeto para informarle de los cambios en el Modelo
@@ -30,6 +36,12 @@ export class Modelo{
 	     for(let callback of this.callbacks)
 	        callback()
 	 }
+	 insertar(objeto, callback){
+		this.idb.insertar(objeto, callback)
+	}
+	
+
+	
 	
 
 }

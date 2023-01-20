@@ -25,6 +25,7 @@ span#anadir{
 }
 div.contenedor{
     background-color: rgb(56, 148, 155);    
+    opacity: 1;
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 70px;

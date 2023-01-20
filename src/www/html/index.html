@@ -3,6 +3,7 @@
 <head>
 	<meta charset=utf-8 />
 	<link rel="icon" type="image/x-icon" href="../assets/logo3.png">
+	<script src="https://kit.fontawesome.com/f7b55e9c0a.js" crossorigin="anonymous"></script>
 
 	<meta name=viewport content="width=device-width, initial-scale=1" />
 	<meta name=author content='mjaque@fundacionloyola.es' />
@@ -11,32 +12,182 @@
 </head>
 <body>
 	<nav>
-		<img src="../assets/logo3.png">
-
 		<ul>
-			<li>Admin</li>
+			<li><img src="../assets/logo3.png"></li>
 			<li>Añadir</li>
 			<li>Modificar</li>
+			<li id="listar">Listar</li>
 		</ul>
+		
+		
+		
 	</nav>
 	<div id=divadmin>
 		<h1>Admin</h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elit eros, molestie sed feugiat a, dignissim a diam. Maecenas tellus tortor, convallis quis nibh sit amet, fermentum ultrices diam. Nam consequat erat sed justo facilisis mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tincidunt porttitor orci non auctor. Maecenas vel augue eu tellus euismod fringilla. Duis bibendum neque et felis scelerisque ullamcorper. Maecenas nec lobortis diam, at commodo lorem. Vivamus et velit ornare, fermentum est a, dictum nisl. Nam id mi et elit lacinia maximus id ac dui. Fusce a ex a dolor accumsan fringilla id finibus velit. Aliquam erat volutpat.</p>
+		<div id="busqueda">
+			<span>Busqueda:</span>
+			<select name="select">
+				<option value="mago">Mago</option>
+				<option value="asesino" >Asesino</option>
+				<option value="tanque">Tanque</option>
+				<option value="Gerrero">Guerrero</option>
+				<option value="Tipo de campeon" hidden selected>TIPO DE CAMPEON</option>
+			</select>
+			<button id="Buscar">Buscar</button>
+				
+		</div>
+		<div dir="contenedor" class="contenedor" id="cont1">
+			<span id="anadir"> <i class="fa-solid fa-plus"></i></span>
+				
+				<div class="contenedorimagen">
+					<img src="../assets/irelia.png" alt="imagen de la cara de irelia personaje del juego" class="champ">
+					<div class="contenedoricono">
+						<span class="icono" id="mod"><i class="fa-solid fa-pen"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-trash"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+				<div class="contenedorimagen">
+					<img src="../assets/lobo.png" alt="lobo" class="champ">
+					<div class="contenedoricono">
+						<span class="icono" class="mod"><i class="fa-solid fa-pen"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-trash"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+				<div class="contenedorimagen">
+					<img src="../assets/nautilus.png" alt="nautilus" class="champ">
+					<div class="contenedoricono">
+						<span class="icono" class="mod"><i class="fa-solid fa-pen"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-trash"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+				<div class="contenedorimagen">
+					<img src="../assets/tris.png" alt="tristana" class="champ">
+					<div class="contenedoricono">
+						<span class="icono" class="mod"><i class="fa-solid fa-pen"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-trash"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+					</div>
+					
+				</div>
+				<div class="contenedorimagen">
+					<img src="../assets/urgot.png" alt="urgot" class="champ">
+					<div class="contenedoricono">
+						<span class="icono" class="mod"><i class="fa-solid fa-pen"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-trash"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+				<div class="contenedorimagen">
+					<img src="../assets/vex.png" alt="vex" class="champ">
+					<div class="contenedoricono">
+						<span class="icono" class="mod"><i class="fa-solid fa-pen"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-trash"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+				<div class="contenedorimagen">
+					<img src="../assets/vi.png" alt="vi" class="champ">
+					<div class="contenedoricono">
+						<span class="icono" class="mod"><i class="fa-solid fa-pen"></i></span>
+						<span class="icono" ><span class="eliminar"><i class="fa-sharp fa-solid fa-trash"></i></span></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+				<div class="contenedorimagen">
+					<img src="../assets/akali.png" alt="akali" class="champ">
+					<div class="contenedoricono">
+						<span class="icono" class="mod"><i class="fa-solid fa-pen"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-trash"></i></span>
+						<span class="icono"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+					</div>
+					
+				</div>
+			</div>
 
-		<p>Maecenas in dapibus libero, eget rhoncus ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur finibus varius molestie. Pellentesque ullamcorper lacus ac odio pulvinar, sed lacinia justo rutrum. Nunc scelerisque lobortis mauris, ac dignissim elit feugiat vel. Cras convallis est ut mollis suscipit. In libero eros, consectetur vehicula ornare at, consequat at risus. Vestibulum fringilla nulla id sollicitudin vulputate.</p>
 	</div>
 	<div id=divanadir>
 		<h1>Añadir</h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elit eros, molestie sed feugiat a, dignissim a diam. Maecenas tellus tortor, convallis quis nibh sit amet, fermentum ultrices diam. Nam consequat erat sed justo facilisis mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tincidunt porttitor orci non auctor. Maecenas vel augue eu tellus euismod fringilla. Duis bibendum neque et felis scelerisque ullamcorper. Maecenas nec lobortis diam, at commodo lorem. Vivamus et velit ornare, fermentum est a, dictum nisl. Nam id mi et elit lacinia maximus id ac dui. Fusce a ex a dolor accumsan fringilla id finibus velit. Aliquam erat volutpat.</p>
+		<div class="cuadro1">
+            <div id="anadirform">
+                <label>Selecciona una imagen del personaje: </label><br>
+                <input type="file" name="imagencamp"  id="inputcampeon" accept="image/*"  />
+                <br><br>
+                <label>Introduce el Nombre: </label>
+                <input type="text" name="nombrecamp"  id="nombrecampeon" placeholder="Ezreal"  />
+                <br><br>
+                <label>Introduce descripcion del personaje:</label><br>
+                <textarea type="text" name="descripcioncamp"  id="descripcioncampeon" placeholder="Ezreal, que nació y creció en un acaudalado
+                 barrio de Piltover, siempre fue un niño curioso. Sus padres eran arqueólogos de renombre, por lo que él se acostumbró a que se
+                ausentaran largo tiempo de la casa familiar y a fantasear, de tanto en tanto, con viajar con ellos allá donde fueran. Le encantaba
+                que le contaran cuentos de grandes aventuras, y se sentía identificado con el anhelo que estos transmitían de no dejar ni un rincón
+                de mapa por recorrer."  ></textarea><br><br>
+                
+                <label>Seleciona la posición del personaje:</label><br><br>
+                <input type="checkbox" name="adc" id="posicion1" />ADC &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="sup" id="posicion2" />Support<br>
+                <input type="checkbox" name="jungla" id="posicion3" />Jungla&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="top" id="posicion4" />Top<br>
+                <input type="checkbox" name="mid" id="posicion5" />Mid<br>
+                
+                <br>
+				Tipo de campeon:</br>
+				<input type="radio" id="opcion1" name="tipo" value="Mago" /> 
+				Mago <br/>
+				<input type="radio" id="opcion2" name="tipo" value="Asesino" /> 
+				Asesino <br/>
+				<input type="radio" id="opcion3" name="tipo" value="Tanque" /> 
+				Tanque<br/>
+				<input type="radio" id="opcion4" name="tipo" value="Guerrero" /> 
+				Guerrero<br/>
+                <br>
+                <label>Seleciona el año de creacion:</label>
+                <input type="date" name="fechacreacion" id="fechacreacion"/>
+                <br><br>
+			</div>
+			<button id="prueba"> añadir</button>
+			
+        </div>
 
-		<p>Maecenas in dapibus libero, eget rhoncus ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur finibus varius molestie. Pellentesque ullamcorper lacus ac odio pulvinar, sed lacinia justo rutrum. Nunc scelerisque lobortis mauris, ac dignissim elit feugiat vel. Cras convallis est ut mollis suscipit. In libero eros, consectetur vehicula ornare at, consequat at risus. Vestibulum fringilla nulla id sollicitudin vulputate.</p>
 	</div>
+	
 	<div id=divmod>
 		<h1>Modificar</h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elit eros, molestie sed feugiat a, dignissim a diam. Maecenas tellus tortor, convallis quis nibh sit amet, fermentum ultrices diam. Nam consequat erat sed justo facilisis mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tincidunt porttitor orci non auctor. Maecenas vel augue eu tellus euismod fringilla. Duis bibendum neque et felis scelerisque ullamcorper. Maecenas nec lobortis diam, at commodo lorem. Vivamus et velit ornare, fermentum est a, dictum nisl. Nam id mi et elit lacinia maximus id ac dui. Fusce a ex a dolor accumsan fringilla id finibus velit. Aliquam erat volutpat.</p>
+		<div class="cuadro1">
+            <form id="anadirform">
+                <label>Selecciona una imagen del personaje: </label><br>
+                <input type="file" name="imagencamp"  id="inputcampeon" accept="image/*" required />
+                <br><br>
+                <label>Introduce el Nombre: </label>
+                <input type="text" name="nombrecamp"  id="nombrecampeon" placeholder="Ezreal" required />
+                <br><br>
+                <label>Introduce descripcion del personaje:</label><br>
+                <textarea type="text" name="descripcioncamp"  id="descripcioncampeon" placeholder="Ezreal, que nació y creció en un acaudalado
+                 barrio de Piltover, siempre fue un niño curioso. Sus padres eran arqueólogos de renombre, por lo que él se acostumbró a que se
+                ausentaran largo tiempo de la casa familiar y a fantasear, de tanto en tanto, con viajar con ellos allá donde fueran. Le encantaba
+                que le contaran cuentos de grandes aventuras, y se sentía identificado con el anhelo que estos transmitían de no dejar ni un rincón
+                de mapa por recorrer." required ></textarea><br><br>
+                
+                <label>Seleciona la posición del personaje:</label><br><br>
+                <input type="checkbox" name="adc" id="adc" />ADC &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="sup" id="sup" />Support<br>
+                <input type="checkbox" name="jungla" id="jungla" />Jungla&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="top" id="top" />Top<br>
+                <input type="checkbox" name="mid" id="mid" />Mid<br>
+                
+			
+                <label>Seleciona el año de creacion:</label>
+                <input type="date" name="fechacreacion" id="fechacreacion"/>
+                <br><br>
+                <input type="submit" id="btnanadir" value="Guardar" name="guardar"></a> &nbsp;&nbsp;&nbsp; 
+            </form>
 
-		<p>Maecenas in dapibus libero, eget rhoncus ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur finibus varius molestie. Pellentesque ullamcorper lacus ac odio pulvinar, sed lacinia justo rutrum. Nunc scelerisque lobortis mauris, ac dignissim elit feugiat vel. Cras convallis est ut mollis suscipit. In libero eros, consectetur vehicula ornare at, consequat at risus. Vestibulum fringilla nulla id sollicitudin vulputate.</p>
+        </div>
 	</div>
+	<!-- <script type=module src="../js/script2.js"></script> -->
+
 	<script type=module src="../js/app.js"></script>
 </body>
 </html>

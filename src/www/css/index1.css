@@ -9,7 +9,16 @@ body{
 nav{
    height:70px;
    background-color: #0A1428;
-   color:#C89B3C
+   color:#C89B3C;
+   
+
+}
+div#busqueda{
+
+    color:#C89B3C;
+}
+span#anadir, span.mod{
+    cursor: pointer;
 }
 img.champ{
     width: 150px;
@@ -30,7 +39,7 @@ div.contenedor{
     margin-top: 70px;
     min-width: 581px;
 }
-div#cuadro1{
+div.cuadro1{
     margin-top: 70px;
 	margin:0 auto;
 	text-align:center;
@@ -42,7 +51,6 @@ div.contenedorimagen{
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
-    background-color: blanchedalmond;
     display: inline-block;   
 }
 span.icono{
@@ -76,11 +84,14 @@ body > div {
 #divInicio img{
 	width: 4rem;
 }
-nav li{
+
+ li{
+
 	cursor: pointer;
     display: inline-block;
     margin-left: 20px;
 }
+
 table{
 	border-collapse: collapse;
 }
